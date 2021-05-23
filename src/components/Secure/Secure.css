@@ -1,0 +1,38 @@
+.layout {
+    height: 100%;
+    display: flex;
+    background-color: #f9f9f9;
+}
+
+.user-picture {
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-picture img {
+    width:inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+
+.sidebar {
+    background-color: white;
+    border-top-right-radius: 20px;
+}
+
+.ant-menu-item-selected,
+.ant-menu-item-active {
+    background-color: transparent !important;
+}
+
+.ant-menu:last-child {
+    bottom: 0;
+}
+.ant-menu-item:last-of-type {
+    bottom: 0;
+}
