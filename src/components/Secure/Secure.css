@@ -8,7 +8,7 @@
     height: 36px;
     width: 36px;
     border-radius: 18px;
-    margin: 20px auto;
+    margin: 24px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,14 +25,24 @@
     border-top-right-radius: 20px;
 }
 
-.ant-menu-item-selected,
-.ant-menu-item-active {
-    background-color: transparent !important;
+.logout {
+    position: absolute !important;
 }
 
-.ant-menu:last-child {
-    bottom: 0;
+.ant-menu-item-selected,
+.ant-menu-item-active {
+    background-color: white !important;
+    color: #fb8500 !important;
 }
+
+.ant-menu-item span {
+    font-size: 20px !important;
+}
+
 .ant-menu-item:last-of-type {
     bottom: 0;
+}
+
+.ant-layout-content {
+    --padding: 25px;
 }

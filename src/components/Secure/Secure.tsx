@@ -17,10 +17,9 @@ type SecureProps = {
 
 export function Secure({ onLogout, userInfo }: SecureProps) {
     const items = [
-        { name: 'Профиль', path: '/profile', icon: <UserOutlined style={{ fontSize: '20px' }} /> },
-        { name: 'Статистика', path: '/statistic', icon: <LineChartOutlined style={{ fontSize: '20px' }} /> },
-        { name: 'Настройки', path: '/', icon: <SettingOutlined style={{ fontSize: '20px' }} /> },
-        // { name: 'Выход', path: '/', icon: <LogoutOutlined style={{ fontSize: '20px' }} /> },
+        { name: 'Профиль', path: '/profile', icon: <UserOutlined/> },
+        { name: 'Статистика', path: '/statistic', icon: <LineChartOutlined/> },
+        { name: 'Настройки', path: '/', icon: <SettingOutlined /> }
     ];
 
     return (
@@ -39,16 +38,15 @@ export function Secure({ onLogout, userInfo }: SecureProps) {
                         </Menu.Item>
                     )}
                     <Menu.Item
-                        icon={<LogoutOutlined
-                            style={{ fontSize: '20px' }} />}
+                        icon={<LogoutOutlined />}
                         key={'logout'}
+                        className='logout'
                         onClick={onLogout}>
                         Выход
                         </Menu.Item>
                 </Menu>
             </Sider>
             <Content>
-                {/* <BrowserRouter> */}
                 <Switch>
                     <Route path="/profile">
                         <Profile />
@@ -57,7 +55,6 @@ export function Secure({ onLogout, userInfo }: SecureProps) {
                         <Statistic />
                     </Route>
                 </Switch>
-                {/* </BrowserRouter> */}
             </Content>
         </Layout>
     )

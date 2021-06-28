@@ -1,0 +1,53 @@
+.ant-card {
+    border-radius: 20px;
+}
+
+.account-main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.account-picture {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+}
+
+.account-picture img {
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+
+.account-username {
+    font-size: 16px;
+    font-weight: 500;
+    color: #023047;
+}
+
+.account-statistic {
+    display: flex;
+    margin-top: 8px;
+}
+
+.account-statistic-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 12px;
+}
+
+.account-statistic-item-name {
+    font-size: 12px;
+    font-weight: 500;
+    color: #219ebc;
+
+}
+
+.account-statistic-item-value {
+    font-size: 20px;
+    font-weight: 500;
+    color: #023047;
+}
